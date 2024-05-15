@@ -1,7 +1,23 @@
 services:
   - type: web
-    name: sample-ruby-app
+    region: oregon
+    name: test-proxy-oregon
     plan: free
     env: ruby
     buildCommand: ./render-build.sh
     startCommand: ./render-start.sh
+    envVars:
+      - key: REGION
+        value: 'OREGEON'
+
+    services:
+  - type: web
+    name: test-proxy-virginia
+    plan: free
+    env: ruby
+    buildCommand: ./render-build.sh
+    startCommand: ./render-start.sh
+    envVars:
+      - key: REGION
+        value: 'VIRGINIA'
+
