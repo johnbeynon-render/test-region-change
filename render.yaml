@@ -10,7 +10,6 @@ services:
       - key: REGION
         value: 'OREGEON'
 
-    services:
   - type: web
     name: test-proxy-virginia
     plan: free
