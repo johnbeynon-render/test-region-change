@@ -13,6 +13,7 @@ services:
   - type: web
     name: test-proxy-virginia
     plan: free
+    region: virginia
     env: ruby
     buildCommand: ./render-build.sh
     startCommand: ./render-start.sh
