@@ -8,7 +8,7 @@ services:
     startCommand: ./render-start.sh
     envVars:
       - key: REGION
-        value: 'OREGEON'
+        value: 'OREGON'
 
   - type: web
     name: test-proxy-virginia
